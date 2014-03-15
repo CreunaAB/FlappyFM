@@ -2,18 +2,18 @@
   "name": "ClumsyBird",
   "version": "0.1.0",
   "description": "Flappy FM is a Clumsy Bird-clone - A MelonJS port of the famous Flappy Bird game",
-  "homepage": "http://ellisonleao.github.io/clumsy-bird/",
+  "homepage": "https://github.com/CreunaAB/FlappyFM",
   "repository": {
     "type": "git",
     "url": "https://github.com/CreunaAB/FlappyFM"
   },
   "bugs": {
-    "url": "https://github.com/ellisonleao/clumsy-bird/issues"
+    "url": "https://github.com/CreunaAB/FlappyFM/issues"
   },
   "licenses": [
     {
       "type": "MIT License",
-      "url": "https://github.com/ellisonleao/clumsy-bird/blob/master/LICENSE"
+      "url": "https://github.com/CreunaAB/FlappyFM/blob/master/LICENSE"
     }
   ],
   "author": {

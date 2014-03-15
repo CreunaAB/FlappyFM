@@ -51,7 +51,7 @@ game.resources = [
 	 {name: "share", type:"image", src: "data/img/share.png"},
 	 {name: "tweet", type:"image", src: "data/img/tweet.png"},
 
-
+	
 	 {name: "theme", type: "audio", src: "data/bgm/"},
 	 {name: "hit", type: "audio", src: "data/sfx/"},
 	 {name: "lose", type: "audio", src: "data/sfx/"},
@@ -112,7 +112,7 @@ var BirdEntity = me.ObjectEntity.extend({
         me.device.vibrate(500);
         me.state.change(me.state.GAME_OVER);
         return false;
-      }
+      }      
       // remove the hit box
       me.game.world.removeChildNow(res.obj);
       // the give dt parameter to the update function
@@ -358,7 +358,7 @@ var Share = me.GUI_Object.extend({
 
   onClick: function(event) {
     var shareText = 'Just made ' + game.data.steps + ' steps on Flappy FM! Can you beat me? Try online here!';
-    var url = 'https://github.com/CreunaAB/FlappyFM';
+    var url = 'http://htmlpreview.github.io/?https://github.com/CreunaAB/FlappyFM/blob/master/index.html';
     FB.ui(
       {
        method: 'feed',
@@ -368,7 +368,7 @@ var Share = me.GUI_Object.extend({
           shareText
        ),
        link: url,
-       picture: '/data/img/clumsy.png'
+       picture: 'data/img/clumsy.png'
       }
     );
     return false;
@@ -389,7 +389,7 @@ var Tweet = me.GUI_Object.extend({
 
   onClick: function(event) {
     var shareText = 'Just made ' + game.data.steps + ' steps on Flappy FM! Can you beat me? Try online here!';
-    var url = 'https://github.com/CreunaAB/FlappyFM';
+    var url = 'http://htmlpreview.github.io/?https://github.com/CreunaAB/FlappyFM/blob/master/index.html';
     var hashtags = 'clumsybird,melonjs,flappyFM'
     window.open('https://twitter.com/intent/tweet?text=' + shareText + '&hashtags=' + hashtags + '&count=' + url + '&url=' + url, 'Tweet!', 'height=300,width=400')
     return false;
@@ -399,7 +399,7 @@ var Tweet = me.GUI_Object.extend({
 
 game.TitleScreen = me.ScreenObject.extend({
   init: function(){
-    this.font = null;
+    this.font = null;    
   },
 
   onResetEvent: function() {
@@ -435,7 +435,7 @@ game.TitleScreen = me.ScreenObject.extend({
     me.game.world.addChild(new (me.Renderable.extend ({
         // constructor
         init: function() {
-            // size does not matter, it's just to avoid having a zero size
+            // size does not matter, it's just to avoid having a zero size 
             // renderable
             this.parent(new me.Vector2d(), 100, 100);
             //this.font = new me.Font('Arial Black', 20, 'black', 'left');
